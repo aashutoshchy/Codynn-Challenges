@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #574964;
+  --primary-color: #221130;
   --main-text-color: #ffdab3;
   --sec-text-color: #c8aaaa;
 }
@@ -15,14 +15,22 @@ body {
   background-color: var(--primary-color);
 }
 
+header {
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
 nav {
   height: 8vh;
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 7px 50px;
   gap: 30px;
+  margin: 0 100px;
   color: var(--main-text-color);
 }
 
@@ -63,7 +71,7 @@ nav .logo p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #574964f1;
+  background-color: #221a2af1;
   z-index: -1;
 }
 
@@ -92,6 +100,7 @@ nav .logo p {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  margin: 0 100px;
 }
 
 .home-right {
@@ -101,9 +110,42 @@ nav .logo p {
 .home-right {
   width: 60%;
   height: 100%;
-  margin-right: 40px;
 }
 
 .home-right img {
   height: 500px;
+}
+
+#about {
+  height: 92vh;
+  margin: 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#about h1 {
+  width: 16%;
+  color: var(--main-text-color);
+}
+
+.line {
+  border: 1px solid var(--main-text-color);
+  width: 84%;
+}
+
+.about-left {
+  width: 50%;
+  color: var(--main-text-color);
+}
+
+.about-right {
+  width: 50%;
+}
+
+.about-right img {
+  width: 80%;
+  float: right;
+  border-radius: 10px;
 }
