@@ -6,9 +6,13 @@
 }
 
 :root {
-  --primary-color: #221130;
+  --primary-color: #574964;
   --main-text-color: #ffdab3;
   --sec-text-color: #c8aaaa;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +20,7 @@ body {
 }
 
 header {
+  height: 8vh;
   background-color: var(--primary-color);
   position: sticky;
   top: 0;
@@ -23,7 +28,7 @@ header {
 }
 
 nav {
-  height: 8vh;
+  height: 100%;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -34,9 +39,14 @@ nav {
   color: var(--main-text-color);
 }
 
-nav .logo p {
+nav .logo a {
   font-weight: 600;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav .logo a p {
+  color: var(--main-text-color);
 }
 
 .nav-links ul {
@@ -53,13 +63,17 @@ nav .logo p {
   font-weight: 500;
 }
 
+.nav-links ul li a:hover {
+  color: var(--sec-text-color);
+}
+
 #home {
-  height: 92vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
-  padding: 100px;
+  padding: 60px;
   color: var(--main-text-color);
   overflow: hidden;
 }
@@ -71,8 +85,16 @@ nav .logo p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #221a2af1;
+  background-color: #25212af1;
   z-index: -1;
+}
+
+.home-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .bg-video {
@@ -90,49 +112,55 @@ nav .logo p {
   object-fit: cover;
 }
 
+.home-left {
+  width: 40%;
+  padding-left: 50px;
+}
+
 .short-bio {
   width: 100%;
   color: var(--sec-text-color);
 }
 
-.home-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  margin: 0 100px;
-}
-
-.home-right {
-  width: 40%;
-}
-
 .home-right {
   width: 60%;
-  height: 100%;
+  overflow: hidden;
+  height: 70vh;
 }
 
 .home-right img {
-  height: 500px;
+  height: 510px;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 50px 100px;
 }
 
 #about {
   height: 92vh;
-  margin: 0 200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-#about h1 {
-  width: 16%;
+.section-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.sec-heading {
   color: var(--main-text-color);
+  width: auto;
 }
 
 .line {
   border: 1px solid var(--main-text-color);
-  width: 84%;
+  flex: 1;
 }
 
 .about-left {
@@ -148,4 +176,121 @@ nav .logo p {
   width: 80%;
   float: right;
   border-radius: 10px;
+}
+
+.skills-content ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills-content ul li {
+  margin: 50px 10px;
+  list-style: none;
+  color: var(--main-text-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+  height: 100px;
+  transition: 1s ease-in-out;
+}
+
+.skills-content ul li img {
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+  padding-left: 2px;
+}
+
+.skills-content ul li img:hover {
+  transform: scale(1.1);
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.project-separation {
+  height: 230px;
+  border: 1.2px solid var(--main-text-color);
+}
+
+.project-box {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  width: 350px;
+}
+
+.project-box img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-box::before {
+  content: "";
+  background-color: #8d747481;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.project-box:hover::before {
+  height: 100%;
+}
+.project-box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+}
+
+.project-box:hover i {
+  opacity: 1;
+}
+
+#contact {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+}
+
+.social-handle {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  gap: 25px;
+}
+
+.social-handle a i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.social-handle a i:hover {
+  color: var(--main-text-color);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 36px 0;
+  font-size: 0.8rem;
+  color: var(--sec-text-color);
 }

@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aashutosh</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <p>Aashutosh Chy.</p>
+                <a href="#home">
+                    <p>Aashutosh Chy.</p>
+                </a>
             </div>
             <div class="nav-links">
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#home">EDUCATION</a></li>
-                    <li><a href="#home">CONTACT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,12 +37,11 @@
             </div>
             <div class="home-left">
                 <h1>Hi, I'm Aashutosh Chaudhary</h1>
-                <p class="short-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis
-                    pariatur
-                    nihil
-                    harum qui fugit accusamus aliquam, ipsum, accusantium mollitia sed at odit aspernatur dolor
-                    doloremque,
-                    explicabo eveniet tempore. Voluptatibus neque doloremque dignissimos rerum!</p>
+                <p class="short-bio">Hi, I’m <b>Aashutosh Chaudhary</b>, a 19-year-old Computer Science student based in
+                    Kathmandu. I’m passionate about web
+                    development and software engineering, with hands-on experience in HTML, CSS, JavaScript, Tailwind,
+                    Python, SQL, and PHP.
+                    Alongside coding, I’m deeply involved in music production, mixing, and mastering.</p>
             </div>
             <div class="home-right">
                 <img src="assets/macbook.png" alt="">
@@ -44,20 +49,90 @@
         </div>
     </section>
     <section id="about">
-        <h1>About Me</h1>
-        <div class="line"></div>
+        <div class="section-title">
+            <h1 class="sec-heading">About Me</h1>
+            <div class="line"></div>
+        </div>
         <div class="about-left">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat omnis nobis temporibus placeat
-                nihil
-                rem
-                doloribus eveniet ducimus odio tempora amet modi, pariatur reprehenderit adipisci ea dolores
-                voluptatem
-                soluta hic? Tempora facilis ad odio.</p>
+            <p>I was born in Bhajaka and currently live in Kathmandu. I completed my +2 from United Academy, Kumaripati,
+                and I’m
+                currently pursuing a Bachelor’s degree in Computer Science at Herald College, Kathmandu.
+
+                I’m an aspiring software engineer with a strong interest in web development. I enjoy building clean,
+                responsive, and
+                user-friendly web applications using technologies like HTML, CSS, JavaScript, Tailwind, Python, SQL, and
+                PHP. I’m
+                continuously learning and improving my problem-solving and development skills.
+
+                Beyond academics, music is a big part of my life. I play guitar and produce my own music. I have
+                practical experience in
+                music production, mixing, and mastering using tools like Logic Pro and Melodyne.
+
+                My goal is to combine creativity and technical skills to grow as a software engineer while continuing to
+                develop my
+                artistic side.</p>
         </div>
         <div class="about-right">
             <img src="assets/Newww.png" alt="">
         </div>
     </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <h1 class="sec-heading">SKills</h1>
+            <div class="line"></div>
+        </div>
+        <div class="skills-content">
+            <ul>
+                <li>HTML <img src="assets/html" alt="html"></li>
+                <li>CSS <img src="assets/css.png" alt=""></li>
+                <li>JavaScript <img src="assets/js.png" alt=""></li>
+                <li>SQL <img src="assets/sql.png" alt=""></li>
+                <li>Python <img src="assets/python.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="section-title">
+            <h1 class="sec-heading">Project</h1>
+            <div class="line"></div>
+        </div>
+        <div class="project-content">
+            <div class="project-box">
+                <img src="assets/tictactoe.jpg" alt="tic_tac_toe">
+                <a href="https://github.com/aashutoshchy/Tic-Tac-Toe" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="project-separation"></div>
+            <div class="project-box">
+                <img src="assets/project2.jpg" alt="tic_tac_toe">
+                <a href="https://github.com/aashutoshchy/HTML-CSS-JS-Projects-" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="project-separation"></div>
+            <div class="project-box">
+                <img src="assets/project3.webp" alt="tic_tac_toe">
+                <a href="https://github.com/aashutoshchy/To-Do-List-App" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">
+            <h1 class="sec-heading">Contact</h1>
+        </div>
+        <div class="social-handle">
+            <a href="https://www.linkedin.com/in/aashutoshchaudhary/" target="_blank"> <i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/aashutoshchy" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+    <footer>
+        <p>Built and designed by Aashutosh Chaudhary.</p>
+        <p>&copy; 2026 Ashutosh Chaudhary</p>
+    </footer>
 </body>
 
 </html>
