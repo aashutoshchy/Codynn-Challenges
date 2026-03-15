@@ -180,12 +180,14 @@ section {
 
 .skills-content ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 10px;
 }
 
 .skills-content ul li {
+  flex: 1;
   margin: 50px 10px;
   list-style: none;
   color: var(--main-text-color);
@@ -222,6 +224,7 @@ section {
 }
 
 .project-box {
+  flex: 2;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
