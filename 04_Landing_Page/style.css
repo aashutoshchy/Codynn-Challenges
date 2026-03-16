@@ -53,8 +53,25 @@ main {
   justify-content: center;
 }
 
-footer {
-  height: 2vh;
-  background: black;
-  color: white;
+main p {
+  text-align: center;
+  padding: 30px 100px;
+}
+
+.headline {
+  font-size: 5rem;
+}
+
+.cta-btns button {
+  padding: 10px 30px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 28px;
+  transition: 0.3s ease-in-out;
+}
+
+.cta-btns button:hover {
+  box-shadow: 5px 8px 2px -5px #6c7986;
 }
