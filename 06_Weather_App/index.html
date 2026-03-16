@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-video">
+            <video src="Assets/background.mp4" muted loop autoplay></video>
+        </div>
+        <div class="left-panel">
+            <div class="weather-image">
+                <img src="Assets/cloud.png" alt="">
+            </div>
+            <div class="details">
+                <h1 id="temp">31 &deg;C</h1>
+                <div class="city-detail">
+                    <p class="city-name">Kathmandu</p>
+                    <p class="time-detail">9:15 PM</p>
+                </div>
+                <div class="weather-details">
+                    <p class="weather-condition">Rainy</p>
+                    <p class="humidity">1231</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="search-bar">
+                <input type="text" class="search-box" autofocus>
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="search-history">
+                <p class="recent">Recent Search</p>
+                <ul class="last-searched">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
